@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Hello Mr.Bulb</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<header class="am-topbar">
+  <h1 class="am-topbar-brand">
+    <a href="#">灯泡</a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-primary am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#" id="d1" >介绍</a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle id="d2" href="javascript:;">
+          抽号系列 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">抽号数</li>
+          <li><a href="https://github.com/1011726441/MyApp/raw/master/%E6%8A%BD%E5%8F%B7%E6%95%B00.5.0%E6%AD%A3%E5%BC%8F%E7%89%88.exe">版本0.5.0（无自动更新）</a></li>
+          <li class="am-active"><a href="https://github.com/1011726441/MyApp/raw/master/%E6%8A%BD%E5%8F%B7%E6%95%B00.6.1%E6%AD%A3%E5%BC%8F%E7%89%88%20.exe">版本0.6.1（无心跳模式）</a></li>
+          <li><a href="https://github.com/1011726441/MyApp/raw/master/%E6%8A%BD%E5%8F%B7%E6%95%B00.7.0.exe">版本0.7.0（最新）</a></li>
+          <li class=""><a href="https://github.com/1011726441/MyApp/">历史版本</a></li>
+          <li class=""><a href="ku.html">语音库</a></li>
+
+        </ul>
+      </li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" id="d3" data-am-dropdown-toggle href="javascript:;">
+          其他系列 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">各种自己制作的软件（待上传抽号软件历史软件已有）</li>
+          <li><a href="#">版本</a></li>
+          <li class="am-active"><a href="#">版本</a></li>
+          <li><a href="#">版本</a></li>
+          <li class=""><a href="#">历史版本</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+</header>
+		<div class="am-slider am-slider-default am-tabs" data-am-tabs data-am-flexslider id="demo-slider-0">
+  <ul class="am-slides">
+    <li><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" $('#d1').click()/><div id="" align="center">
+    	介绍（没有好的介绍图片用框架的图顶下）：<a href="#introduction" onclick="$('#LiTab1').click()" >到这里来。</a>
+    </div></li>
+    <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" onclick="$('#d2').click()"/><div id="" align="center">
+    	抽号系列（没有好的介绍图片用框架的图顶下）：<a href="#introduction" onclick="$('#LiTab2').click()">到这来</a>
+    	
+    </div></li>
+    <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" $('#d3').click()/><div id="" align="center">
+    	其他系列（没有好的介绍图片用框架的图顶下）：<a href="#introduction" onclick="$('#LiTab3').click()">到这来</a>
+    	
+    </div></li>
+  </ul>
+</div>
+<div class="am-tabs" data-am-tabs id="introduction">
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active" ><a id="LiTab1" href="#tab1">个人介绍</a></li>
+    <li><a href="#tab2" id="LiTab2">抽号数系列</a></li>
+    <li><a href="#tab3" id="LiTab3">其他系列</a></li>
+  </ul>
+
+  <div class="am-tabs-bd">
+    <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+    	<p>
+    		大家好，我是灯泡是一个十足蛋疼的学生，致力于写一些实用性的程序。我希望能减轻老师负担增加公平性便编写了抽号软件。
+    		并在此诚邀年龄不足18 懂得编程并且有一定的经验的大家加入我的工作室：786401514（qq群）。
+    		我们以互相学习，互相切磋共同繁荣进步为主要目的。
+    	</p>
+    	
+    </div>
+    <div class="am-tab-panel am-fade" id="tab2">
+     抽号数软件可以语音点名  记录被点名的同学，拥有多种抽号模式，并且会在将来不断更新
+    </div>
+    <div class="am-tab-panel am-fade" id="tab3">
+    一些自己写的程序，具体可以自己摸索哦
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<hr />
+<footer class="am-footer">
+			<p>鸣谢：</p>	
+		<a href="index.php">灯泡网 |</a>
+		<a href="index.php">php   |</a>
+		<a href="index.php">易语言 |</a>
+</footer>
+<!--在这里编写你的代码-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets\js\jquery-3.3.1.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="assets\js\jquery-3.3.1.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script> 
+
+</script>
+</body>
+</html>
